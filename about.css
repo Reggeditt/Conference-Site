@@ -1,0 +1,171 @@
+
+#menu-close-icon {
+  display: none;
+  align-self: flex-end;
+}
+
+.sub-title,
+#title {
+  display: inline;
+  align-self: center;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 15px;
+  gap: 10px;
+}
+
+section.one {
+  height: 600px;
+  padding-block-start: 60px;
+  padding-block-end: 20px;
+  background-color: #ebe6e6;
+  justify-content: space-around;
+}
+
+.sub-title {
+  font-size: 1rem;
+  color: #fc5c4afd;
+}
+
+.title {
+  color: #ec5242;
+  mix-blend-mode: multiply;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: left;
+}
+
+section.one small {
+  text-align: center;
+}
+
+section.one .description {
+  background-color: #fff;
+  color: #717070;
+  max-width: 600px;
+}
+
+section.one .contact-us {
+  align-self: center;
+}
+
+.contact-link {
+  align-self: center;
+}
+
+section h3 {
+  color: #414141;
+  padding-inline: 20%;
+  text-align: center;
+}
+
+section .divider {
+  width: 10%;
+  border-bottom: 2px solid #8e3c47;
+  align-self: center;
+}
+
+section p {
+  text-align: center;
+  color: #6c6b6b;
+}
+
+.logo-img {
+  background-image: url(assets/images/logo2.png);
+  background-position: 0;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  align-self: center;
+  width: 250px;
+  height: 120px;
+  border: 1px solid #f4f4f4;
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .image {
+  width: 100%;
+  height: 270px;
+}
+
+.gallery .one {
+  background:
+    linear-gradient(
+      rgba(196, 58, 34, 0.6),
+      rgba(158, 47, 27, 0.2)
+    ),
+    url(assets/images/conference1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.gallery .two {
+  background:
+    linear-gradient(
+      rgba(173, 64, 44, 0.6),
+      rgba(173, 64, 44, 0.2)
+    ),
+    url(assets/images/conference2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image h3 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.image span {
+  color: rgb(227, 226, 226);
+}
+
+@media (min-width: 768px) {
+  section.one .sub-title {
+    font-size: 2rem;
+  }
+
+  section.one #title {
+    font-size: 3.4rem;
+  }
+
+  .gallery {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .gallery .image {
+    width: 45%;
+  }
+}
+
+main > *:not(footer) {
+  padding-inline: 20%;
+}
