@@ -220,7 +220,6 @@ nav {
 .card-icon {
   width: 10%;
   height: 100%;
-  /* margin: 1px; */
   box-sizing: content-box;
 }
 
@@ -254,7 +253,6 @@ nav {
 
 .card .activity {
   color: #ca5141;
-  height: fit-content;
   width: 25%;
 }
 
@@ -263,7 +261,6 @@ nav {
   text-align: left;
   margin-block: auto;
   vertical-align: middle;
-  height: fit-content;
   width: 50%;
 }
 
@@ -634,6 +631,7 @@ footer .footer-logo {
   .speaker-image img {
     left: 15px;
   }
+
   .speaker-info {
     width: 90%;
   }
