@@ -100,7 +100,7 @@ nav {
 }
 
 .hero {
-  padding: 50px 10px;
+  padding: 50px 5px;
   background:
     linear-gradient(
       rgba(238, 238, 238, 0.239),
@@ -115,7 +115,7 @@ nav {
       rgb(249, 249, 249)
     ),
     url(assets/images/main-illustration.jpg);
-  height: 500px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -128,22 +128,19 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-.hero > * {
-  margin: 0;
-  padding: 10px;
+  padding: 5px;
 }
 
 .sub-title {
   font-family: 'Lato', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: #ec5242;
 }
 
 #title {
   color: #ec5242;
+  text-transform: capitalize;
   mix-blend-mode: multiply;
   font-family: 'lato', sans-serif;
   font-size: 2.5rem;
@@ -167,14 +164,15 @@ nav {
 .date {
   color: #272a31;
   font-family: 'Lato', sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 22px;
+  margin-block-end: 10px;
 }
 
 .venue {
   color: #272a31;
   font-family: 'Lato', sans-serif;
-  font-weight: 350;
+  font-weight: 400;
 }
 
 .program {
@@ -184,7 +182,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-image: url(assets/images/program-pattern-bg.png);
-  height: 700px;
+  height: 750px;
   padding-block: 30px;
 }
 
@@ -196,6 +194,7 @@ nav {
 
 .program .divider {
   width: 10%;
+  max-width: 35px;
   border-bottom: 2px solid #8e3c47;
 }
 
@@ -224,7 +223,7 @@ nav {
 }
 
 .card-icon {
-  width: 10%;
+  width: 20%;
   height: 100%;
   box-sizing: content-box;
 }
@@ -266,7 +265,8 @@ nav {
 
 .card .activity {
   color: #ca5141;
-  width: 25%;
+  font-size: 1rem;
+  width: 30%;
 }
 
 .card-description {
@@ -274,12 +274,15 @@ nav {
   text-align: left;
   margin-block: auto;
   vertical-align: middle;
-  width: 50%;
+  padding-inline-end: 5px;
+  width: 54%;
+  font-size: 0.8rem;
 }
 
 .program-btn {
   background-color: #e74c33;
   color: #f5ebe9de;
+  font-size: 1rem;
   padding: 18px;
 }
 
@@ -292,6 +295,7 @@ nav {
 .speaker-section h2 {
   margin-inline: auto;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 .speaker-section .divider {
@@ -312,7 +316,7 @@ nav {
   width: 100%;
   height: 150px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .speaker-card * {
@@ -323,26 +327,27 @@ nav {
   background-image: url(assets/images/speaker-image.png);
   background-position: top;
   background-size: 103px;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-repeat: no-repeat;
+  justify-self: flex-start;
 }
 
 .speaker-image img {
   position: relative;
   top: 10px;
-  left: 35px;
+  left: 6px;
   width: 93px;
   height: 92px;
 }
 
 .speaker-info .name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: lato, sans-serif;
 }
 
 .speaker-info .portfolio {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #f27363;
 }
 
@@ -351,13 +356,13 @@ nav {
   max-width: 40px;
   border-bottom: 1px solid #737272;
   margin-inline: 0;
-  margin-block: 15px;
+  margin-block: 10px;
 }
 
 .speaker-info .details {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #434343;
-  width: 400px;
+  width: 100%;
 }
 
 footer {
