@@ -150,6 +150,7 @@ nav {
   font-weight: 900;
   line-height: 44px;
   text-align: left;
+  max-width: 580px;
 }
 
 .description {
@@ -385,55 +386,45 @@ footer {
 
 .partners {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-  grid-template-rows: repeat(2, 1fr); /* 2 rows with equal height */
-  grid-template-areas: 
-    'one two three'
-    'four five';
-    justify-content: center;
-    align-self: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-self: center;
   row-gap: 5px;
 }
-
 
 #airbnb {
   font-family: 'lato', serif;
   color: #bfbfbf;
-  grid-area: one;
 }
 
 #alphabet {
   font-family: lato, serif;
   font-size: 1.5rem;
   color: #df2c2b;
-  grid-area: two;
 }
 
 #mozilla {
   font-family: lato, serif;
   color: #888686;
-  grid-area: three;
   font-size: 1.5rem;
 }
 
 #naver {
   font-family: lato, serif;
   color: #9d9d9d;
-  grid-area: four;
   font-size: 1.5rem;
 }
 
 #facebook {
   font-family: lato, serif;
   color: rgb(41, 41, 129);
-  grid-area: five;
   font-size: 1.5rem;
 }
 
 #kasapreko {
   font-family: lato, serif;
   color: rgb(103, 58, 58);
-  grid-area: five;
   font-size: 1.5rem;
 }
 
@@ -605,7 +596,7 @@ footer .footer-logo {
   }
 
   .hero #title {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
 
   .hero .description {
