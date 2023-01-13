@@ -103,15 +103,15 @@ nav {
   padding: 50px 10px;
   background:
     linear-gradient(
-      rgba(202, 201, 201, 0.2),
-      rgba(171, 169, 169, 0.65),
-      rgba(171, 169, 169, 01),
-      rgba(171, 169, 169, 0.65),
-      rgba(173, 172, 172, 0.85),
-      rgba(178, 177, 177, 0.85),
-      rgba(178, 177, 177, 0.95),
-      rgba(138, 138, 138, 0.9),
-      rgb(214, 206, 206),
+      rgba(238, 238, 238, 0.239),
+      hsla(0, 0%, 93%, 0.239),
+      rgb(238, 238, 238),
+      rgba(238, 238, 238, 0.91),
+      rgba(238, 238, 238, 0.82),
+      rgba(238, 238, 238, 0.62),
+      rgb(178 177 177 / 18%),
+      rgb(201 199 199 / 92%),
+      rgb(241 238 238 / 99%),
       rgb(249, 249, 249)
     ),
     url(assets/images/main-illustration.jpg);
@@ -138,19 +138,23 @@ nav {
 .sub-title {
   font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
-  color: #fd4430fd;
+  font-weight: 400;
+  color: #ec5242;
 }
 
 #title {
-  color: #f9422e;
+  color: #ec5242;
   mix-blend-mode: multiply;
+  font-family: 'lato', sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
+  line-height: 44px;
   text-align: left;
 }
 
 .description {
-  color: #515151;
+  color: #272a31;
+  font-weight: 400;
   border: 2px solid #fff;
   background-color: #d5d3d3;
   width: calc(100% - 10px);
@@ -160,15 +164,16 @@ nav {
 }
 
 .date {
-  color: #494949;
+  color: #272a31;
   font-family: 'Lato', sans-serif;
   font-weight: 800;
   font-size: 22px;
 }
 
 .venue {
-  color: #737272;
+  color: #272a31;
   font-family: 'Lato', sans-serif;
+  font-weight: 350;
 }
 
 .program {
@@ -178,7 +183,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-image: url(assets/images/program-pattern-bg.png);
-  height: 650px;
+  height: 700px;
   padding-block: 30px;
 }
 
@@ -239,6 +244,13 @@ nav {
 
 #workshop-icon {
   background-image: url(assets/images/workshop.png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center;
+}
+
+#giveaway-icon {
+  background-image: url(assets/images/giveaway.svg);
   background-repeat: no-repeat;
   background-size: 50px;
   background-position: center;
@@ -338,22 +350,25 @@ nav {
   max-width: 40px;
   border-bottom: 1px solid #737272;
   margin-inline: 0;
-  margin-block: 5px;
+  margin-block: 15px;
 }
 
 .speaker-info .details {
   font-size: 0.8rem;
   color: #434343;
+  width: 400px;
 }
 
 footer {
+  display: none;
   width: 100%;
 }
 
 .partners-info {
   width: 100%;
-  height: 120px;
+  height: 180px;
   background-color: #404246;
+  padding-block: 5px;
 }
 
 .partner-heading {
@@ -364,15 +379,62 @@ footer {
 .partners-info .divider {
   border-bottom: 2px solid #ca5141;
   width: 10%;
+  max-width: 40px;
   margin-inline: auto;
 }
 
 .partners {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  list-style: none;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows with equal height */
+  grid-template-areas: 
+    'one two three'
+    'four five';
+    justify-content: center;
+    align-self: center;
+  row-gap: 5px;
+}
+
+
+#airbnb {
+  font-family: 'lato', serif;
+  color: #bfbfbf;
+  grid-area: one;
+}
+
+#alphabet {
+  font-family: lato, serif;
+  font-size: 1.5rem;
+  color: #df2c2b;
+  grid-area: two;
+}
+
+#mozilla {
+  font-family: lato, serif;
+  color: #888686;
+  grid-area: three;
+  font-size: 1.5rem;
+}
+
+#naver {
+  font-family: lato, serif;
+  color: #9d9d9d;
+  grid-area: four;
+  font-size: 1.5rem;
+}
+
+#facebook {
+  font-family: lato, serif;
+  color: rgb(41, 41, 129);
+  grid-area: five;
+  font-size: 1.5rem;
+}
+
+#kasapreko {
+  font-family: lato, serif;
+  color: rgb(103, 58, 58);
+  grid-area: five;
+  font-size: 1.5rem;
 }
 
 .partner-icon {
@@ -382,19 +444,25 @@ footer {
 
 .company-patent {
   width: 100%;
+  height: 100px;
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 footer .footer-logo {
-  width: 40%;
-  height: 100px;
-  background-image: url(assets/images/logo2.png);
-  background-position: top;
-  background-size: 100%;
+  width: 50%;
+  height: 60%;
+  max-height: 100px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/images/logo.png);
   background-repeat: no-repeat;
+  background-position: -30px -29px;
+  background-size: 288px;
 }
 
 .copyright {
@@ -641,11 +709,19 @@ footer .footer-logo {
   }
 
   .speaker-info .divider {
-    margin-block: 05px;
+    margin-block: 8px;
     border-bottom: 1px solid #bfbfbf;
   }
 
+  .speaker-info .details {
+    width: 250px;
+  }
+
   /* +++++++++++++++++++++++footer++++++++++++++++++ */
+  footer {
+    display: block;
+  }
+
   .partner-heading h2 {
     margin-block: 5px;
     padding-inline-end: 10px;
@@ -653,7 +729,7 @@ footer .footer-logo {
   }
 
   .company-patent .footer-logo {
-    background-position: 0 -34px;
+    background-position: 0 -14px;
     background-size: 250px;
   }
 }
