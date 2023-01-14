@@ -48,19 +48,19 @@ const speakerData = [
     details: 'Tetteh is a multi- instrumentalist who serves as the Music Director for variious choirs.',
   },
   {
-    image: 'jonah.jpg',
+    image: '/jonah.jpg',
     name: 'Mr. Jonah Frimpong Domfeh',
     portfolio: 'Music tutor, Tritone Music Academy',
     details: 'Mr Jonah is a tutor of music theory. His interests lie in producing Jazz music with AI.',
   },
   {
-    image: 'clement.jpg',
+    image: '/clement.jpg',
     name: 'Mr. Clement Ofori',
     portfolio: 'Business Analyst, Tritone Music Co',
     details: 'Mr Clement is a music entrepreneur specializing in the commercial aspects of music production.',
   },
   {
-    image: 'MrDoe.jpg',
+    image: '/MrDoe.jpg',
     name: 'Mr. Alex Doe',
     portfolio: 'Sound Engineer, Tritone Studios',
     details: 'rising star in the feild of sound engineering.',
