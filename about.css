@@ -8,7 +8,7 @@ main {
   flex-direction: column;
 }
 
-main>*:not(footer) {
+main > *:not(footer) {
   padding-inline: 5%;
 }
 
@@ -140,8 +140,10 @@ section.two p {
 
 .gallery .one {
   background:
-    linear-gradient(rgba(196, 58, 34, 0.6),
-      rgba(158, 47, 27, 0.2)),
+    linear-gradient(
+      rgba(196, 58, 34, 0.6),
+      rgba(158, 47, 27, 0.2)
+    ),
     url(assets/images/conference1.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -155,8 +157,10 @@ section.two p {
 
 .gallery .two {
   background:
-    linear-gradient(rgba(173, 64, 44, 0.6),
-      rgba(173, 64, 44, 0.2)),
+    linear-gradient(
+      rgba(173, 64, 44, 0.6),
+      rgba(173, 64, 44, 0.2)
+    ),
     url(assets/images/conference2.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -167,7 +171,7 @@ section.two p {
   justify-content: center;
 }
 
-.image h3 {
+.gallery .image h3 {
   color: #fff;
   font-size: 2rem;
   margin: 10px;
@@ -349,6 +353,7 @@ footer {
     height: 200px;
     width: 100%;
   }
+
   .partners-info {
     display: none;
   }
