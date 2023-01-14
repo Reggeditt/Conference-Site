@@ -96,11 +96,11 @@ section.two p {
 
 .logo-img {
   background-image: url(assets/images/logo.png);
-  background-position: 0;
+  background-position: -25px;
   background-size: 350px;
   background-repeat: no-repeat;
   align-self: center;
-  width: 350px;
+  width: 300px;
   height: 150px;
   border: 1px solid #f4f4f4;
   margin-block-end: 50px;

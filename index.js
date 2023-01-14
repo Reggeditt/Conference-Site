@@ -54,13 +54,13 @@ const speakerData = [
     details: 'Mr Jonah is a tutor of music theory. His interests lie in producing Jazz music with AI.',
   },
   {
-    image: '/clement.jpg',
+    image: 'clement.jpg',
     name: 'Mr. Clement Ofori',
     portfolio: 'Business Analyst, Tritone Music Co',
     details: 'Mr Clement is a music entrepreneur specializing in the commercial aspects of music production.',
   },
   {
-    image: '/MrDoe.jpg',
+    image: 'MrDoe.jpg',
     name: 'Mr. Alex Doe',
     portfolio: 'Sound Engineer, Tritone Studios',
     details: 'rising star in the feild of sound engineering.',
@@ -72,7 +72,7 @@ for (let i = 0; i < speakerData.length; i += 1) {
   speakerCardEl.className = 'speaker-card';
   speakerCardEl.innerHTML = `
     <figure class="speaker-image">
-      <img src="assets/images/speakers/${speakerData[i].image}" alt="featured speaker ${i} image">
+      <img src="../assets/images/speakers/${speakerData[i].image}" alt="featured speaker ${i} image">
     </figure>
     <aside class="speaker-info">
       <h3 class="name">${speakerData[i].name}</h3>
